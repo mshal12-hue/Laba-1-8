@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Неоновий годинник</title>
+    <style>
+        body {
+            background: #05010a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .neon-clock {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            position: relative;
+            background: radial-gradient(circle, #0d0c1a 40%, #05010a 100%);
+            box-shadow:
+                0 0 25px #4d00ff,
+                0 0 50px #200080,
+                inset 0 0 30px #3800b8;
+        }
+
+        .pointer {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: bottom;
+            transform: translateX(-50%) rotate(0deg);
+            border-radius: 3px;
+        }
+
+        .pointer-hour {
+            width: 8px;
+            height: 80px;
+            background: #7a41ff;
+            box-shadow: 0 0 15px #7a41ff, 0 0 25px #4e00ff;
+        }
+
+        .pointer-minute {
+            width: 6px;
+            height: 120px;
+            background: #42aaff;
+            box-shadow: 0 0 15px #42aaff, 0 0 25px #008cff;
+        }
+
+        .pointer-second {
+            width: 3px;
+            height: 140px;
+            background: #ff0077;
+            box-shadow: 0 0 10px #ff0077, 0 0 20px #ff0055;
+        }
+
+        .center-circle {
+            width: 20px;
+            height: 20px;
+            background: #ff00c8;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+            box-shadow:
+                0 0 10px #ff00c8,
+                0 0 20px #ff00aa,
+                0 0 30px #ff0080;
+        }
+    </style>
+</head>
+<body>
+
+<div class="neon-clock">
+    <div class="pointer pointer-hour" id="hourPointer"></div>
+    <div class="pointer pointer-minute" id="minutePointer"></div>
+    <div class="pointer pointer-second" id="secondPointer"></div>
+    <div class="center-circle"></div>
+</div>
+
+<script>
+    function ref

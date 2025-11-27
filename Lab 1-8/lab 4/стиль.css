@@ -1,0 +1,67 @@
+.card {
+    width: 240px;
+    background: #e6efff;
+    border: 2px solid #7e9cff;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.card-img {
+    width: 200px;        
+    height: 200px;       
+    object-fit: cover;     
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+.card-title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.props {
+    text-align: left;
+    font-size: 14px;
+}
+.prop-name {
+    font-weight: bold;
+}
+.btns {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.btn {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 14px;
+}
+.btn-buy {
+    background: #4CAF50;
+    color: white;
+}
+.btn-buy:hover {
+    background: #3d8b40;
+    box-shadow: 0 0 8px #4CAF50;
+}
+.btn-fav {
+    background: #3d8aff;
+    color: white;
+}
+.btn-fav:hover {
+    background: #2d6cd0;
+    box-shadow: 0 0 8px #3d8aff;
+}
+.btn-delete {
+    background: #ff4b4b;
+    color: white;
+}
+.btn-delete:hover {
+    background: #d63131;
+    box-shadow: 0 0 8px #ff4b4b;
+}
